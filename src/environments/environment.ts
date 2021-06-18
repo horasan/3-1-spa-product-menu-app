@@ -4,12 +4,10 @@
 
 export const environment = {
   production: false,
-  //productApiEndPoint: 'http://localhost:5000/productapi/v1',
-  productApiEndPoint: 'http://localhost:8102/autocomplete',
-  coreFreMenuApiEndPoint: 'http://localhost:8102/corefremenu',
-  authenticationApiEndPoint: 'http://localhost:5000/authentication/v1',
-  menuApiEndPoint: 'http://localhost:1001/menu/v1',
-  kafkaApiEndPoint: 'http://localhost:1001/menu/v1'
+  elasticSearchApiEndPoint: 'http://localhost:3001/menuapi',
+  elasticSearchDescriptionApiEndPoint: '/description',
+  
+  
 };
 
 /*

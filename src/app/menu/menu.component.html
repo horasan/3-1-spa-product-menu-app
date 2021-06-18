@@ -1,0 +1,42 @@
+<div class="form-group">
+    <div class="row">
+        <div class="container">
+            <h6>Search menu suggestion</h6>
+            <input type="text" placeholder="enter search value..." (keyup)="onSearchForSuggestion($event.target.value)" class="ticketinginput" />
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>fullPath</th>
+                    <th>description</th>
+                    <th>highlighted</th>
+                    <th>hitScore</th>
+                    <!--
+                    <th>createdBy</th>
+                    <th>createdDate</th>
+                    <th>screenId</th>
+                    <th>screenOid</th>
+                    <th>tag</th>
+                    -->
+                </tr>
+            </thead>
+            <tbody *ngFor="let menuItem of menuItemFromApi">
+                <tr>
+                    <th>{{ menuItem.fullPath }}</th>
+                    <th>{{ menuItem.description }}</th>
+                    <th>{{ menuItem.highlighted }}</th>
+                    <th>{{ menuItem.hitScore }}</th>
+                    <!--
+                    <th>{{ menuItem.createdBy }}</th>
+                    <th>{{ menuItem.createdDate }}</th>
+                    <th>{{ menuItem.screenId }}</th>
+                    <th>{{ menuItem.screenOid }}</th>
+                    <th>{{ menuItem.tag }}</th>
+                    -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        
+    </div>
+</div>
+<hr>
